@@ -1,0 +1,156 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CesiumWpfApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.Web.WebView2": "1.0.3351.48",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Drawing.Common": "9.0.7",
+          "Microsoft.Web.WebView2.Core": "1.0.3351.48",
+          "Microsoft.Web.WebView2.WinForms": "1.0.3351.48",
+          "Microsoft.Web.WebView2.Wpf": "1.0.3351.48"
+        },
+        "runtime": {
+          "CesiumWpfApp.dll": {}
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.3351.48": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/WebView2Loader.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.0.3351.48"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.3351.48"
+          },
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.3351.48"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/9.0.7": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31616"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31616"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "System.Drawing.Common/9.0.7": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "9.0.7"
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31604"
+          },
+          "lib/net8.0/System.Private.Windows.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31604"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.Core/1.0.3351.48": {
+        "runtime": {
+          "Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.3351.48",
+            "fileVersion": "1.0.3351.48"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.WinForms/1.0.3351.48": {
+        "runtime": {
+          "Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.3351.48",
+            "fileVersion": "1.0.3351.48"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.Wpf/1.0.3351.48": {
+        "runtime": {
+          "Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.3351.48",
+            "fileVersion": "1.0.3351.48"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CesiumWpfApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Web.WebView2/1.0.3351.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UIzXdl3x3H2MX2es7+BHYT3pLkLoT7090omqla9S3MQQCma0slwiY+CXBM6x0LmdLTpksoQ6XUqOAXrtxjtklQ==",
+      "path": "microsoft.web.webview2/1.0.3351.48",
+      "hashPath": "microsoft.web.webview2.1.0.3351.48.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lFGY2aGgmMREPJEfOmZcA6v0CLjWVpcfNHRgqYMoSQhy80+GxhYqdW5xe+DCLrVqE1M7/0RpOkIo49/KH/cd/A==",
+      "path": "microsoft.win32.systemevents/9.0.7",
+      "hashPath": "microsoft.win32.systemevents.9.0.7.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "System.Drawing.Common/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1k/Pk7hcM3vP2tfIRRS2ECCCN7ya+hvocsM1JMc4ZDCU6qw7yOuUmqmCDfgXZ4Q4FS6jass2EAai5ByKodDi0g==",
+      "path": "system.drawing.common/9.0.7",
+      "hashPath": "system.drawing.common.9.0.7.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2.Core/1.0.3351.48": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Web.WebView2.WinForms/1.0.3351.48": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Web.WebView2.Wpf/1.0.3351.48": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

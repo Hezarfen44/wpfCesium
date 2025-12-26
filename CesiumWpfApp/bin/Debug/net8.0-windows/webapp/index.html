@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEM Terrain Provider with GeoServer Satellite</title>
+    <script src="Cesium/Cesium.js"></script>
+    <link href="Cesium/Widgets/widgets.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div id="cesiumContainer"></div>
+      <div id="controls">
+          <h3>DEM Terrain & Satellite Imagery</h3>
+          <div class="section">
+              <h4>DEM Terrain Settings</h4>
+              <label>GeoServer URL:</label><br />
+              <input type="text"
+                     id="geoserverUrl"
+                     value="http://localhost:8085/geoserver/wms"
+                     style="width: 300px" /><br />
+              <label>DEM Layer Name:</label><br />
+              <input type="text"
+                     id="layerName"
+                     value="elevation:all_world"
+                     style="width: 300px" /><br />
+              <label>Min Height (m):</label>
+              <input type="number" id="minHeight" value="0" style="width: 100px" />
+              <label>Max Height (m):</label>
+              <input type="number"
+                     id="maxHeight"
+                     value="4000"
+                     style="width: 100px" /><br />
+              <label>Max Level:</label>
+              <input type="number" id="maxLevel" value="10" style="width: 100px" />
+              <label>Exaggeration:</label>
+              <input type="number"
+                     id="exaggeration"
+                     value="1"
+                     step="0.1"
+                     style="width: 100px" /><br />
+              <button onclick="loadDEMTerrain()">Load DEM Terrain</button>
+              <button onclick="resetTerrain()">Reset Terrain</button>
+          </div>
+          <div class="section">
+              <h4>Satellite Imagery Settings</h4>
+              <label>Satellite Layer Name:</label><br />
+              <input type="text"
+                     id="satelliteLayerName"
+                     value="deneme:geotools_coverage"
+                     style="width: 300px" /><br />
+              <button onclick="loadSatelliteImagery()">Load Satellite Imagery</button>
+              <button onclick="resetImagery()">Reset to OpenStreetMap</button>
+          </div>
+          <div class="section">
+              <button onclick="loadBoth()">Load Both DEM & Satellite</button>
+              <button onclick="testWithFakeData()">Test with Fake DEM</button>
+          </div>
+      </div>
+      <script src="Functions/DEMTerrainProvider.js"></script>
+      <script src="Functions/CesiumConfig.js"></script>
+      <script src="Functions/UIFunctions.js"></script>
+      <script src="Functions/EventHandlers.js"></script>
+      <script src="Functions/PerformanceMonitor.js"></script>
+      <script src="Functions/main.js"></script>
+  </body>
+</html>
